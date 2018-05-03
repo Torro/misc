@@ -1,5 +1,10 @@
-#!/usr/bin/env python
-# A quick and simple tcpvpn.com registration script
+#!/usr/bin/python3
+# tcpvpn-register.py - a quick and simple tcpvpn.com registration script
+# 
+# Copyright (c) 2018 Torro
+# See the file "copying.txt" included in this
+# directory for details about the copyright.
+
 import requests
 import random
 import string

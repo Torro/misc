@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+# unquote-url.py - decode percent encoded strings
+#
+# Copyright (c) 2018 Torro
+# See the file "copying.txt" included in this
+# directory for details about the copyright.
 import sys
 import urllib.parse
 

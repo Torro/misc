@@ -1,5 +1,9 @@
-#!/bin/bash
-# Extremely simple script to alert when the (inaccurate) size of your backup is less than usual.
+#!/bin/sh
+# checkbackupsize.sh - simple script to alert when the (inaccurate) size of your backup is less than usual.
+#
+# Copyright (c) 2018 Torro
+# See the file "copying.txt" included in this
+# directory for details about the copyright.
 
 BACKUPFILE=$1
 MINSIZE=$2
