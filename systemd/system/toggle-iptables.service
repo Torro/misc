@@ -1,0 +1,12 @@
+[Unit]
+Description=restore iptables
+PartOf=openvpn.service openvpn@.service
+Before=openvpn.service openvpn@.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/sbin/iptables-restore /etc/iptables/rules.v4.vpn
+ExecStart=/sbin/ip6tables-restore /etc/iptables/rules.v6.vpn
+ExecStop=/sbin/iptables-restore /etc/iptables/rules.v4.basic
+ExecStop=/sbin/ip6tables-restore /etc/iptables/rules.v6.basic
