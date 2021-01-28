@@ -1,4 +1,4 @@
-# Copyright (c) 2020 Torro
+# Copyright (c) 2020-2021 Torro
 # 
 # See the file "copying.txt" included in this
 # directory for details about the copyright.
@@ -6,8 +6,8 @@ import parseopt, uri
 
 
 const
-  Version = "0.1.0"
-  Usage = "decurl v" & Version & ", rename files to their sha1sums" & """
+  Version = "0.1.1"
+  Usage = "decurl v" & Version & ", decode/encode urls" & """
 
 Usage: shaname "string" ["string"]...
 
@@ -17,7 +17,7 @@ Usage: shaname "string" ["string"]...
   -h, --help        shows this help
   -v, --version     shows the version
 
-Copyright (c) 2020 Torro
+Copyright (c) 2020-2021 Torro
 """
 
 var
